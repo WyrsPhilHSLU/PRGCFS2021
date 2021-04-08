@@ -4,18 +4,19 @@ int main()
 {
 	int sum = 0;
 	int i = 1;
-	int maxSum = 555;
+	int maxSum = 5049;
 	
-	for( i = 1; ; i++)
+	for(i = 1; ; i++)
 	{
+		
 		if( sum >= maxSum)
 		{
 			break;
 		}
-		sum += i;
+		sum = sum + i;
 	}
 
-	printf("The sum from %d to %d is equal to %d\n", start, maxSum, sum);
+	printf("The sum from 1 to %d is equal to %d\n", (i-1), sum);
 	
 	return 0;
 }	
